@@ -90,8 +90,8 @@ export default {
     return {
       inputModel: null,
       inputModel2: null,
-      imageRegular: require("../assets/img/image_placeholder.jpg"),
-      imageCircle: require("../assets/img/placeholder.jpg"),
+      imageRegular: require("~/lib/assets/img/image_placeholder.jpg"),
+      imageCircle: require("~/lib/assets/img/placeholder.jpg"),
       hasImage: false
     };
   },
@@ -115,9 +115,9 @@ export default {
     },
     removeImage: function() {
       if (this.type === "image-circle") {
-        this.imageCircle = require("../assets/img/placeholder.jpg");
+        this.imageCircle = require("~/lib/assets/img/placeholder.jpg");
       } else {
-        this.imageRegular = require("../assets/img/image_placeholder.jpg");
+        this.imageRegular = require("~/lib/assets/img/image_placeholder.jpg");
       }
       this.hasImage = false;
     },
